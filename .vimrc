@@ -71,3 +71,6 @@ nmap <leader>jA mA:Ack "<C-r>=expand("<cWORD>")<cr>"
 
 " keybind call ctrlp
 let g:ctrlp_map = '<leader>c'
+
+" define keybinding w!! for save file as root
+cmap w!! w !sudo tee % >/dev/null
